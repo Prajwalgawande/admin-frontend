@@ -1,0 +1,21 @@
+.reseller{
+    
+    margin: 10vh 22vw;
+
+}
+.reseller h1{
+    text-align: center;
+    margin-bottom: 10vh;
+    
+}
+.reseller_detiles{
+    padding: 0 10vw;
+}
+.reseller_detiles div{
+    padding: 10px 0;
+}
+.reseller_detiles span{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 20px;
+}

@@ -1,0 +1,44 @@
+.course {
+    margin-left: 22vw;
+    color: black;
+}
+
+.top_bar{
+    padding: 15px;
+    background-color: rgb(201, 197, 197);
+    color: rgb(4, 4, 89);
+}
+.top_bar span{
+    color: red;
+}
+.top_reseller{
+    display: flex;
+    padding: 20px 10px;
+}
+.addreseller{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: red;
+}
+.reseller_lists{
+    display: flex;
+    padding: 10px 0;
+}
+.seller_name_id{
+    width: 20vw;
+}
+
+.reseller_lists:hover{
+    color: rgb(51, 156, 192);
+    cursor: pointer;
+}
+.left_side {
+    display: flex;
+    padding: 0 20px ;
+}
+
+.left_side div{
+    padding: 0 10px;
+    font-weight: bolder;
+    width: 11vw;
+}

@@ -1,0 +1,77 @@
+.logo img{
+    width: 150px;
+    height: 40px;
+}
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.leftItems{
+    display: flex;
+    margin-right: 30px;
+}
+.leftItems i{
+    padding: 13px 10px 0 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.name_admin, .letter_admin{
+   padding:  12px;
+}
+.letter_admin{
+    background-color: gray;
+    padding: 10px;
+    font-size: 1.3rem;
+    margin: 2px 0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+/* 
+side navbar
+*/
+
+.sidenav{
+    color: white;
+    width: 20vw;
+    position: absolute;
+    background-color: rgb(5, 78, 117);
+    height: 150vh;
+}
+.line_nav{
+width: 80%;
+    height: 1px ;
+    background-color: white;
+    margin-left: 10px;
+}
+.heading_nav{
+    padding: 8px 10px;
+}
+.elements_nav div{
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.elements_nav i{
+    padding: 0 10px;
+}
+.nav1:hover,
+.nav2:hover,
+.nav3:hover,
+.nav4:hover,
+.nav5:hover,
+.nav6:hover,
+.nav7:hover,
+.nav8:hover,
+.nav9:hover,
+.nav10:hover,
+.nav11:hover,
+.nav12:hover,
+.nav13:hover,
+.nav14:hover{
+    border-left: 2px solid greenyellow;
+    margin-left: 4px;
+}

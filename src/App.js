@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Login from './components/login/Login'
+import Reseller from './components/Resellerlist/Reseller';
+import Updateseller from './components/Updatereseller/Updateseller';
+import Resellerinfo from './components/reseller/Resellerinfo'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom"
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+       
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='/updateseller' element={<Updateseller />} />
+          <Route path='/resellerinfo/:id' element={<Resellerinfo />} />
+          <Route path='/reseller' element={<Reseller />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

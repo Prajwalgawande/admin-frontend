@@ -1,14 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import './Reseller.css'
-import axios from 'axios'
+import Axios from 'axios'
 import Navbar from '../navbar/Navbar'
-import {Link} from 'react-router-dom'
+import {Link,useNavigate} from 'react-router-dom'
 
 
 const Reseller = () => {
    const [data, setdata] = useState("")
+   const navigate = useNavigate();
     useEffect(() => {
-        axios.get("http://localhost:3001/viewuser").then(res => {
+        const username=JSON.parse(localStorage.getItem('username'));
+        const password=JSON.parse(localStorage.getItem('password'));
+        Axios.post('http://localhost/backend_with_php/Login.php', ({ username: username, password: password })).then((Response) => {
+        console.log(username+password)
+            if(Response.data!=='Welcome'){
+               navigate('/');
+               console.log("done")
+            }
+            })
+
+
+        Axios.get("http://localhost/backend_with_php/Readinfo.php").then(res => {
             setdata( res.data)
         }).catch(err => {
             console.log(err);

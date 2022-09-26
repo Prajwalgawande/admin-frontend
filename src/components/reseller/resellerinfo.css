@@ -8,6 +8,13 @@
     margin-bottom: 10vh;
     
 }
+.delete{
+    padding: 10px ;
+    margin: 20px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
 .reseller_detiles{
     padding: 0 10vw;
 }

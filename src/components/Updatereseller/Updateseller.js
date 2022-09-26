@@ -14,7 +14,7 @@ const Updateseller = () => {
     const [einno, seteinno] = useState("")
 
     const addreseller=()=>{
-       if(einno) if(name) if(phone) if(commission) if(emailaddress) Axios.post('http://localhost:3001/addreseller',({name: name,emailaddress:emailaddress ,phone:phone,commission:commission,einno:einno})).then((Response)=>{
+       if(einno) if(name) if(phone) if(commission) if(emailaddress) Axios.post('http://localhost/backend_with_php/Insertuser.php',({name: name,emailaddress:emailaddress ,phone:phone,commission:commission,einno:einno})).then((Response)=>{
               console.log(Response)
         });
         if(!einno||!name||!phone||!commission||!emailaddress){
